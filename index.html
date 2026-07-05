@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menaya BeYom — One stock idea, every day</title>
+  <meta name="description" content="One focused stock idea every day. Clear thesis. Key numbers. Risks. Bottom line. Disciplined, editorial financial analysis in Hebrew and English." />
+  <meta name="theme-color" content="#0e1726" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Menaya BeYom — One stock idea, every day" />
+  <meta property="og:description" content="One focused stock idea every day. Clear thesis. Key numbers. Risks. Bottom line." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Frank+Ruhl+Libre:wght@400;500;700;900&family=Assistant:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/styles.css" />
+  <noscript><style>
+    /* Without JS, skip reveal animation so all content is visible */
+    .section-head, .stock-card, .format-step, .archive-table, .join-card, .hero-copy, .hero-visual
+    { opacity: 1 !important; transform: none !important; }
+  </style></noscript>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e1726'/%3E%3Cpath d='M7 21l4.5-6 3.2 3.4L20 11l5 10' fill='none' stroke='%23c9a24b' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Menaya BeYom">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="30" height="30">
+            <rect width="32" height="32" rx="7" fill="var(--ink)"/>
+            <path d="M7 21l4.5-6 3.2 3.4L20 11l5 10" fill="none" stroke="var(--gold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name" data-i18n="brand.name">Menaya BeYom</span>
+          <span class="brand-sub" data-i18n="brand.sub">One stock. Every day.</span>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#today" data-i18n="nav.today">Today’s Stock</a>
+        <a href="#format" data-i18n="nav.format">The Format</a>
+        <a href="#archive" data-i18n="nav.archive">Archive</a>
+        <a href="#join" data-i18n="nav.join">Join</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="he" class="lang-btn">HE</button>
+          <button type="button" data-lang="en" class="lang-btn is-active">EN</button>
+        </div>
+        <a href="#today" class="btn btn-sm btn-primary" data-i18n="nav.cta">See today</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Daily equity intelligence</p>
+          <h1 class="hero-title">
+            <span data-i18n="hero.title.1">One stock idea.</span>
+            <span class="accent-line" data-i18n="hero.title.2">Every single day.</span>
+          </h1>
+          <p class="hero-lede" data-i18n="hero.lede">
+            Not market noise. Not a 40-page report. One focused analysis a day —
+            clear thesis, key numbers, the real risk, and a disciplined bottom line.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#today" class="btn btn-primary" data-i18n="hero.cta.primary">See today’s stock</a>
+            <a href="#join" class="btn btn-ghost" data-i18n="hero.cta.secondary">Join the daily list</a>
+          </div>
+
+          <ul class="hero-points">
+            <li><span class="dot" aria-hidden="true"></span><span data-i18n="hero.point.1">One idea, not a firehose</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span data-i18n="hero.point.2">Structured every time</span></li>
+            <li><span class="dot" aria-hidden="true"></span><span data-i18n="hero.point.3">Tracked after publishing</span></li>
+          </ul>
+        </div>
+
+        <!-- Editorial data visual (SVG, no stock photo) -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="visual-card">
+            <div class="visual-head">
+              <span class="visual-ticker">NVDX · <span data-i18n="hero.visual.sector">Semiconductors</span></span>
+              <span class="tag tag-interesting" data-i18n="badge.interesting">Interesting</span>
+            </div>
+            <svg class="spark" viewBox="0 0 320 120" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="fill" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="0" stop-color="var(--up)" stop-opacity="0.20"/>
+                  <stop offset="1" stop-color="var(--up)" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <path class="spark-area" d="M0,92 L26,84 L52,88 L78,70 L104,74 L130,58 L156,62 L182,44 L208,50 L234,34 L260,40 L286,22 L320,16 L320,120 L0,120 Z" fill="url(#fill)"/>
+              <path class="spark-line" d="M0,92 L26,84 L52,88 L78,70 L104,74 L130,58 L156,62 L182,44 L208,50 L234,34 L260,40 L286,22 L320,16" fill="none" stroke="var(--up)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="visual-stats">
+              <div><span class="vs-k" data-i18n="hero.visual.thesis">Thesis</span><span class="vs-v">5 pts</span></div>
+              <div><span class="vs-k" data-i18n="hero.visual.risk">Risk</span><span class="vs-v">Named</span></div>
+              <div><span class="vs-k" data-i18n="hero.visual.line">Bottom line</span><span class="vs-v vs-up">Clear</span></div>
+            </div>
+          </div>
+          <div class="visual-note">
+            <span class="visual-note-day" data-i18n="hero.visual.today">Today</span>
+            <span data-i18n="hero.visual.note">Published 06:30 · read in 3 min</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap trust-row">
+        <span data-i18n="trust.1">Research-style analysis</span>
+        <span class="sep" aria-hidden="true">·</span>
+        <span data-i18n="trust.2">Numbers first</span>
+        <span class="sep" aria-hidden="true">·</span>
+        <span data-i18n="trust.3">Risk named, not hidden</span>
+        <span class="sep" aria-hidden="true">·</span>
+        <span data-i18n="trust.4">Hebrew &amp; English</span>
+      </div>
+    </section>
+
+    <!-- ===================== TODAY'S STOCK ===================== -->
+    <section class="section" id="today">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="today.eyebrow">Today’s stock</p>
+          <h2 class="section-title" data-i18n="today.title">One idea, fully structured</h2>
+          <p class="section-lede" data-i18n="today.lede">A sample of the daily card. Same shape every day, so you always know where to look.</p>
+        </div>
+
+        <article class="stock-card">
+          <div class="stock-card-top">
+            <div class="stock-id">
+              <div class="stock-name">
+                <h3><span data-i18n="card.company">Meridian Logistics</span> <span class="ticker">MRDN</span></h3>
+                <p class="stock-meta"><span data-i18n="card.exchange">NASDAQ</span> · <span data-i18n="card.sector">Industrials — Freight &amp; Logistics</span></p>
+              </div>
+              <span class="tag tag-interesting" data-i18n="badge.interesting">Interesting</span>
+            </div>
+            <div class="stock-quote">
+              <div class="quote-block">
+                <span class="q-label" data-i18n="card.price">Price</span>
+                <span class="q-value">$48.20</span>
+                <span class="q-change up">+1.8%</span>
+              </div>
+              <div class="quote-block">
+                <span class="q-label" data-i18n="card.mcap">Market cap</span>
+                <span class="q-value">$6.4B</span>
+              </div>
+              <div class="quote-block">
+                <span class="q-label" data-i18n="card.date">Published</span>
+                <span class="q-value" data-i18n="card.datevalue">Jul 5, 2026</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="stock-body">
+            <div class="stock-col">
+              <h4 class="block-label" data-i18n="card.thesisLabel">Thesis</h4>
+              <ul class="thesis-list">
+                <li data-i18n="card.thesis.1">Margins inflected positive after two years of network rebuild.</li>
+                <li data-i18n="card.thesis.2">Contracted volume backlog covers ~70% of FY26 revenue.</li>
+                <li data-i18n="card.thesis.3">Debt refinanced through 2029 — no near-term wall.</li>
+                <li data-i18n="card.thesis.4">Trades at 11× forward earnings vs peers at 16–18×.</li>
+                <li data-i18n="card.thesis.5">Insider buying in the last two quarters.</li>
+              </ul>
+
+              <h4 class="block-label" data-i18n="card.whyLabel">Why now</h4>
+              <p class="block-text" data-i18n="card.why">A new long-haul contract lands next quarter and management guided to the first free-cash-flow-positive year since the rebuild. The market is still pricing the old story.</p>
+            </div>
+
+            <div class="stock-col">
+              <h4 class="block-label" data-i18n="card.numbersLabel">Key numbers</h4>
+              <div class="numbers-grid">
+                <div class="num"><span class="num-k" data-i18n="card.n.pe">Fwd P/E</span><span class="num-v">11.2×</span></div>
+                <div class="num"><span class="num-k" data-i18n="card.n.rev">Rev growth</span><span class="num-v up">+9%</span></div>
+                <div class="num"><span class="num-k" data-i18n="card.n.margin">Op. margin</span><span class="num-v">7.4%</span></div>
+                <div class="num"><span class="num-k" data-i18n="card.n.fcf">FCF yield</span><span class="num-v">5.1%</span></div>
+                <div class="num"><span class="num-k" data-i18n="card.n.debt">Net debt/EBITDA</span><span class="num-v">2.1×</span></div>
+                <div class="num"><span class="num-k" data-i18n="card.n.roic">ROIC</span><span class="num-v up">9.8%</span></div>
+              </div>
+
+              <h4 class="block-label risk-label" data-i18n="card.riskLabel">Main risk</h4>
+              <p class="block-text" data-i18n="card.risk">A freight-rate downturn would hit the thesis directly — the margin recovery depends on pricing holding. Watch spot rates and the Q3 contract renewal.</p>
+            </div>
+          </div>
+
+          <div class="stock-bottom">
+            <div class="bottom-line">
+              <span class="bl-label" data-i18n="card.bottomLabel">Bottom line</span>
+              <p data-i18n="card.bottom">Cheap for a reason that may be resolving. Interesting at this price — sized as a position, not a bet.</p>
+            </div>
+            <div class="bottom-verdict">
+              <span class="verdict-chip verdict-interesting" data-i18n="badge.interesting">Interesting</span>
+            </div>
+          </div>
+        </article>
+
+        <p class="micro-disclaimer" data-i18n="card.microDisclaimer">Illustrative example with placeholder data. Not investment advice.</p>
+      </div>
+    </section>
+
+    <!-- ===================== FORMAT ===================== -->
+    <section class="section section-alt" id="format">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="format.eyebrow">The format</p>
+          <h2 class="section-title" data-i18n="format.title">Six parts. The same every day.</h2>
+          <p class="section-lede" data-i18n="format.lede">Discipline is the product. You read the same structure daily, so nothing important gets skipped.</p>
+        </div>
+
+        <ol class="format-grid">
+          <li class="format-step">
+            <span class="step-no">01</span>
+            <h3 data-i18n="format.1.t">Thesis</h3>
+            <p data-i18n="format.1.d">Why this stock, in 3–5 sharp bullets. The whole argument at a glance.</p>
+          </li>
+          <li class="format-step">
+            <span class="step-no">02</span>
+            <h3 data-i18n="format.2.t">Numbers</h3>
+            <p data-i18n="format.2.d">Valuation, growth, margins, balance sheet. The figures that decide it.</p>
+          </li>
+          <li class="format-step">
+            <span class="step-no">03</span>
+            <h3 data-i18n="format.3.t">Catalyst</h3>
+            <p data-i18n="format.3.d">Why now, not someday. The event or shift that closes the gap.</p>
+          </li>
+          <li class="format-step">
+            <span class="step-no">04</span>
+            <h3 data-i18n="format.4.t">Risk</h3>
+            <p data-i18n="format.4.d">The one thing that breaks the thesis — named, not buried.</p>
+          </li>
+          <li class="format-step">
+            <span class="step-no">05</span>
+            <h3 data-i18n="format.5.t">Bottom line</h3>
+            <p data-i18n="format.5.d">A clear verdict: Interesting, Watchlist, Too expensive, or High risk.</p>
+          </li>
+          <li class="format-step">
+            <span class="step-no">06</span>
+            <h3 data-i18n="format.6.t">Follow-up</h3>
+            <p data-i18n="format.6.d">We track what we published. Right and wrong, both stay on the record.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== ARCHIVE ===================== -->
+    <section class="section" id="archive">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="archive.eyebrow">Archive</p>
+          <h2 class="section-title" data-i18n="archive.title">Every idea, on the record</h2>
+          <p class="section-lede" data-i18n="archive.lede">A preview of past days. Each one keeps its call and its tracked performance.</p>
+        </div>
+
+        <div class="archive-table" role="table" aria-label="Archive of past stock ideas">
+          <div class="archive-row archive-head" role="row">
+            <span role="columnheader" data-i18n="archive.h.date">Date</span>
+            <span role="columnheader" data-i18n="archive.h.ticker">Ticker</span>
+            <span role="columnheader" class="col-thesis" data-i18n="archive.h.thesis">One-line thesis</span>
+            <span role="columnheader" data-i18n="archive.h.status">Status</span>
+            <span role="columnheader" class="col-perf" data-i18n="archive.h.perf">Since</span>
+          </div>
+
+          <div class="archive-row" role="row">
+            <span role="cell" class="a-date" data-i18n="archive.r1.date">Jul 4</span>
+            <span role="cell" class="a-ticker">AURA</span>
+            <span role="cell" class="col-thesis" data-i18n="archive.r1.thesis">Software margins re-rating as cloud costs peak.</span>
+            <span role="cell"><em class="tag tag-watch" data-i18n="badge.watchlist">Watchlist</em></span>
+            <span role="cell" class="col-perf up">+4.2%</span>
+          </div>
+          <div class="archive-row" role="row">
+            <span role="cell" class="a-date" data-i18n="archive.r2.date">Jul 3</span>
+            <span role="cell" class="a-ticker">KEPX</span>
+            <span role="cell" class="col-thesis" data-i18n="archive.r2.thesis">Balance sheet fixed, market still pricing the old risk.</span>
+            <span role="cell"><em class="tag tag-interesting" data-i18n="badge.interesting">Interesting</em></span>
+            <span role="cell" class="col-perf up">+7.9%</span>
+          </div>
+          <div class="archive-row" role="row">
+            <span role="cell" class="a-date" data-i18n="archive.r3.date">Jul 2</span>
+            <span role="cell" class="a-ticker">VLTA</span>
+            <span role="cell" class="col-thesis" data-i18n="archive.r3.thesis">Great story, but priced for perfection at 40× sales.</span>
+            <span role="cell"><em class="tag tag-expensive" data-i18n="badge.expensive">Too expensive</em></span>
+            <span role="cell" class="col-perf down">−2.1%</span>
+          </div>
+          <div class="archive-row" role="row">
+            <span role="cell" class="a-date" data-i18n="archive.r4.date">Jul 1</span>
+            <span role="cell" class="a-ticker">NRDC</span>
+            <span role="cell" class="col-thesis" data-i18n="archive.r4.thesis">Turnaround real, but leverage makes it a high-risk call.</span>
+            <span role="cell"><em class="tag tag-highrisk" data-i18n="badge.highrisk">High risk</em></span>
+            <span role="cell" class="col-perf up">+12.4%</span>
+          </div>
+          <div class="archive-row" role="row">
+            <span role="cell" class="a-date" data-i18n="archive.r5.date">Jun 30</span>
+            <span role="cell" class="a-ticker">HALO</span>
+            <span role="cell" class="col-thesis" data-i18n="archive.r5.thesis">Pricing power intact; a quiet compounder at a fair price.</span>
+            <span role="cell"><em class="tag tag-interesting" data-i18n="badge.interesting">Interesting</em></span>
+            <span role="cell" class="col-perf up">+5.6%</span>
+          </div>
+        </div>
+
+        <p class="micro-disclaimer" data-i18n="archive.note">Performance figures are illustrative placeholders. Past results do not predict future returns.</p>
+      </div>
+    </section>
+
+    <!-- ===================== JOIN / NEWSLETTER ===================== -->
+    <section class="section join-section" id="join">
+      <div class="wrap">
+        <div class="join-card">
+          <div class="join-copy">
+            <p class="eyebrow eyebrow-light" data-i18n="join.eyebrow">The daily list</p>
+            <h2 class="join-title" data-i18n="join.title">Get one stock idea every day</h2>
+            <p class="join-lede" data-i18n="join.lede">One email each morning. The full card — thesis, numbers, risk, bottom line. No noise, unsubscribe anytime.</p>
+            <ul class="join-benefits">
+              <li data-i18n="join.b1">Delivered before the open</li>
+              <li data-i18n="join.b2">3-minute read, structured</li>
+              <li data-i18n="join.b3">Also on WhatsApp / Telegram</li>
+            </ul>
+          </div>
+
+          <form class="join-form" id="joinForm" novalidate>
+            <label class="field">
+              <span class="field-label" data-i18n="join.emailLabel">Email address</span>
+              <input type="email" name="email" required autocomplete="email"
+                     data-i18n-attr="placeholder" data-i18n-placeholder="join.emailPh"
+                     placeholder="you@example.com" />
+            </label>
+
+            <fieldset class="channels">
+              <legend data-i18n="join.channelsLabel">Also send me on</legend>
+              <label class="check">
+                <input type="checkbox" name="whatsapp" />
+                <span data-i18n="join.whatsapp">WhatsApp</span>
+              </label>
+              <label class="check">
+                <input type="checkbox" name="telegram" />
+                <span data-i18n="join.telegram">Telegram</span>
+              </label>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary btn-block" data-i18n="join.submit">Get one stock idea every day</button>
+            <p class="form-note" data-i18n="join.note">No spam. One idea a day. Unsubscribe in one click.</p>
+            <p class="form-success" id="formSuccess" hidden data-i18n="join.success">You’re on the list. Watch your inbox tomorrow morning.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DISCLAIMER ===================== -->
+    <section class="disclaimer" aria-label="Disclaimer">
+      <div class="wrap disclaimer-inner">
+        <span class="disclaimer-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+        </span>
+        <p data-i18n="disclaimer.text">This content is for informational and educational purposes only and does not constitute investment advice. Investors should do their own research and consider consulting a licensed advisor.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name" data-i18n="brand.name">Menaya BeYom</span>
+        <span class="footer-tag" data-i18n="footer.tag">One focused stock idea, every day.</span>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#today" data-i18n="nav.today">Today’s Stock</a>
+        <a href="#format" data-i18n="nav.format">The Format</a>
+        <a href="#archive" data-i18n="nav.archive">Archive</a>
+        <a href="#join" data-i18n="nav.join">Join</a>
+      </nav>
+      <p class="footer-legal">
+        <span data-i18n="footer.copy">© 2026 Menaya BeYom. All rights reserved.</span><br/>
+        <span class="footer-fineprint" data-i18n="footer.fine">Not investment advice. Markets involve risk of loss.</span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="/i18n.js" defer></script>
+</body>
+</html>
